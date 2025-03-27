@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Tiết Người Dùng</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            background-color: #333;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        li {
+            display: inline-block;
+        }
+
+        li a.active {
+            font-weight: bold;
+            background-color: #111;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+
+        footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+
+        table {
+            margin-top: 300px;
+            padding: auto;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 15px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 50%;
+            margin: 200px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .user-info {
+            margin: 20px 0;
+        }
+
+        .user-info label {
+            font-weight: bold;
+        }
+
+        .btn-edit {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .btn-edit:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a class="active" href="logout.php">Đăng xuất</a></li>
+        </ul>
+    </header>
+    <div class="container">
+        <h2>Màn hình chi tiết</h2>
+        <div class="user-info">
+            <label>Username: </label>
+           
+        </div>
+        <div class="user-info">
+            <label>Email: </label>
+           
+        </div>
+        <a href="#">
+            <button class="btn-edit">Chỉnh sửa</button>
+        </a>
+    </div>
+
+    <footer>
+        <p>&copy; Lập trình web 2025</p>
+    </footer>
+</body>
+
+</html>
